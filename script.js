@@ -34,7 +34,7 @@ function generateUser() {
         // }) 
         
         textElement1.forEach((element, index) => {
-            element.innerText = `${data.results[index].name.first} ${data.results[index].name.last}`
+            element.innerText = `${data.results[index].name.title} ${data.results[index].name.first} ${data.results[index].name.last}`
             // element.innerText = data.results[index].name.last
             // console.log(element, index)
         })
@@ -57,7 +57,7 @@ function generateUser() {
         })
 
         textElement6.forEach((element, index) => {
-            element.innerText = `${data.results[index].dob.date}`
+            element.innerText = `${new Date(data.results[index].dob.date)}`
         })
         
     
@@ -67,6 +67,13 @@ function generateUser() {
         console.log(error)
     })
 }
+
+// async function generateUser() {
+//     const food = await fetch('https://randomuser.me/api/')
+
+//     const food_is_ready = await food.json();
+//     return food_is_ready;
+// }
 
 setInterval(generateUser, 3000)
 

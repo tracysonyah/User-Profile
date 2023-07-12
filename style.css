@@ -1,12 +1,16 @@
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
+}
 
 body {
-    background-color: deeppink;
+    background-image: url(barbie5.jpg);
 }
+
+/* h1 {
+    align-items: center;
+} */
 
 .container {
     display: flex;
@@ -24,11 +28,12 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 300px;
-    box-shadow: ;
+    margin: 20px;
 }
 
 .div1 p, .div2 p, .div3 p {
     margin-bottom: 3px;
+    font-size: large;
 }
 
 .div1 img, .div2 img, .div3 img {
